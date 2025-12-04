@@ -136,6 +136,7 @@ main {
 
     .right-side1 h1 {
         margin-top: 50px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -157,6 +158,8 @@ main {
     .bar-words {
         font-size: medium;
         display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     .right-side1 h1 {
@@ -181,6 +184,8 @@ main {
 
     .bar-words {
         font-size: smaller;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -276,6 +281,7 @@ h2 span {
     .grid {
         display: grid;
         grid-template-columns: auto;
+        gap: 5em;
     }
 }
 
@@ -289,7 +295,7 @@ h2 span {
     }
     .img1 {
         width: 250px;
-        height: 100px;
+        height: 150px;
     }
     .heading h2{
         font-size: 1.5em;
@@ -301,10 +307,16 @@ h2 span {
 
 
 
+.info-wrapper{
+   border: 2px solid brown;
+   padding-bottom: 30px; 
+   border: none;
+}
 .my-info {
     display: flex;
     justify-content: center;
     border: 2px solid grey;
+    border: none;
     padding: 50px;
     gap: 70px;
 }
@@ -337,11 +349,48 @@ h2 span {
     color: blue;
 }
 
+
+
+
+
+.skills{
+    border: 2px solid green;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border: none
+}
+.skills span{
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+}
+.skill-img{
+    display: flex;
+    gap: 1.5em;
+    margin-left: 80px;
+}
+.img2{
+    width: 50px;
+    gap: 1em;
+    margin-top: 40px;
+}
+.img2:hover{
+    animation-name: bounce;
+    animation-duration: 2s;
+}
 @media(max-width:870px) {
     .my-info {
         display: grid;
     }
 }
+@media(max-width:427px){
+    .skills{
+        width: 100%;
+    }
+}
+
+
 
 
 
@@ -357,6 +406,9 @@ h2 span {
     color: white;
     padding: 30px;
 }
+.education h1 span{
+    color: blue;
+}
 .grids{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -365,7 +417,7 @@ h2 span {
     padding: 30px;
 }
 .edu-grid{
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     width: 400px;
     height: 250px;
     background-color: #272727;
@@ -395,6 +447,7 @@ h2 span {
     .grids{
         display: grid;
         grid-template-columns: auto;
+        gap: 5em;
     }
     .edu-grid{
         width: 350px;
