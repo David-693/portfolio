@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     list-style-type: none;
     text-decoration: none;
 }
@@ -23,6 +23,7 @@ nav {
     width: 100%;
     z-index: 99999;
 }
+
 .left-side {
     color: white;
     font-size: medium;
@@ -32,9 +33,11 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.img0{
+
+.img0 {
     width: 100px;
 }
+
 .right-side {
     display: flex;
     gap: 1.5em;
@@ -44,6 +47,8 @@ nav {
     display: flex;
     gap: 2.5em;
     font-size: larger;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
 }
 
@@ -57,8 +62,15 @@ nav {
 }
 
 .fa-bars {
-    display: none;
-    font-size: xx-large;
+    /* border: 2px solid grey; */
+    padding: 10px 25px;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    display: none; 
+    font-size: xx-large; 
 }
 
 @media(max-width:875px) {
@@ -75,13 +87,18 @@ nav {
 
 @media(max-width:872px) {
     .fa-bars {
-        display: inline-block;
+        display: block;
+        display: flex;
+        padding: 10px 25px;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-list {
         display: none;
     }
-    .img0{
+
+    .img0 {
         display: none;
     }
 }
@@ -127,7 +144,7 @@ main {
 .fa-arrow-right {
     width: 20px;
     color: blue;
-}
+} 
 
 @media(max-width:875px) {
     main {
@@ -240,17 +257,21 @@ h2 span {
     animation-duration: 2s;
     border-bottom: 15px solid blue;
 }
-@keyframes bounce{
-    0%{
+
+@keyframes bounce {
+    0% {
         transform: translateY(0px)
     }
-    25%{
+
+    25% {
         transform: translateY(-10px);
     }
-    50%{
+
+    50% {
         transform: translateY(2px);
     }
 }
+
 .img1 {
     width: 350px;
     height: 250px;
@@ -290,14 +311,17 @@ h2 span {
         width: 300px;
         height: 350px;
     }
-    .grid-items:hover{
+
+    .grid-items:hover {
         border-bottom: 15px solid blue;
     }
+
     .img1 {
         width: 250px;
         height: 150px;
     }
-    .heading h2{
+
+    .heading h2 {
         font-size: 1.5em;
     }
 }
@@ -307,11 +331,12 @@ h2 span {
 
 
 
-.info-wrapper{
-   border: 2px solid brown;
-   padding-bottom: 30px; 
-   border: none;
+.info-wrapper {
+    border: 2px solid brown;
+    padding-bottom: 30px;
+    border: none;
 }
+
 .my-info {
     display: flex;
     justify-content: center;
@@ -353,39 +378,45 @@ h2 span {
 
 
 
-.skills{
+.skills {
     border: 2px solid green;
     padding: 20px;
     width: 60%;
     margin: auto;
     border: none
 }
-.skills span{
+
+.skills span {
     font-size: 2em;
     font-weight: 500;
     color: white;
 }
-.skill-img{
+
+.skill-img {
     display: flex;
     gap: 1.5em;
     margin-left: 80px;
 }
-.img2{
+
+.img2 {
     width: 50px;
     gap: 1em;
     margin-top: 40px;
 }
-.img2:hover{
+
+.img2:hover {
     animation-name: bounce;
     animation-duration: 2s;
 }
+
 @media(max-width:870px) {
     .my-info {
         display: grid;
     }
 }
-@media(max-width:427px){
-    .skills{
+
+@media(max-width:427px) {
+    .skills {
         width: 100%;
     }
 }
@@ -396,35 +427,41 @@ h2 span {
 
 
 
-.education{
+.education {
     background-color: #373737;
 }
-.education h1{
+
+.education h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     padding: 30px;
 }
-.education h1 span{
+
+.education h1 span {
     color: blue;
 }
-.grids{
+
+.grids {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 2em;
     padding: 30px;
 }
-.edu-grid{
+
+.edu-grid {
     /* border: 2px solid brown; */
     width: 400px;
     height: 250px;
     background-color: #272727;
     display: flex;
     justify-content: space-around;
+    border-radius: 10px;
 }
-.edutext{
+
+.edutext {
     /* border: 2px solid blue; */
     padding: 10px 15px;
     height: 50px;
@@ -433,7 +470,8 @@ h2 span {
     font-size: 1.5em;
     font-weight: 900;
 }
-.edutext-btn{
+
+.edutext-btn {
     border: 2px solid blue;
     margin-top: 10px;
     padding: 10px 15px;
@@ -443,20 +481,23 @@ h2 span {
     font-weight: 900;
     background-color: blue;
 }
-@media(max-width:1203px){
-    .grids{
+
+@media(max-width:1203px) {
+    .grids {
         display: grid;
         grid-template-columns: auto;
         gap: 5em;
     }
-    .edu-grid{
+
+    .edu-grid {
         width: 350px;
         height: 200px;
         justify-content: space-between;
     }
 }
-@media(max-width:419px){
-    .edu-grid{
+
+@media(max-width:419px) {
+    .edu-grid {
         width: 300px;
         height: 150px;
         justify-content: space-between;
