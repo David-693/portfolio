@@ -35,7 +35,8 @@ nav {
 }
 
 .img0 {
-    width: 100px;
+    width: 60px;
+    border-radius: 50%;
 }
 
 .right-side {
@@ -97,9 +98,22 @@ nav {
     .menu-list {
         display: none;
     }
-
-    .img0 {
-        display: none;
+}
+@media(max-width:425px){
+    .img0{
+        width: 40px;
+    }
+    .left-side h1{
+        font-size: 1.5em;
+    }
+    .fa-bars{
+    padding: 5px 12px;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
     }
 }
 
@@ -502,7 +516,7 @@ h2 span {
     .grids {
         display: grid;
         grid-template-columns: auto;
-        gap: 5em;
+        gap: 3em;
     }
 
     .edu-grid {
@@ -522,8 +536,10 @@ h2 span {
 
 
 
-.contact-me {
-    border: 2px solid grey;
+.contact-me{
+    /* border: 2px solid grey;
+    width: 60%;
+    margin: auto; */
     background-color: #272727;
 }
 
@@ -535,8 +551,11 @@ p {
     font-weight: 700;
     font-size: 2em;
     color: white;
+    gap: 0.3em;
 }
-
+p span{
+    color: blue;
+}
 
 
 .message1 {
@@ -549,7 +568,7 @@ p {
 .input1 {
     border: 2px solid #383838;
     width: 250px;
-    height: 40px;
+    height: 50px;
     margin-top: 20px;
     background-color: #383838;
     color: white;
@@ -559,7 +578,7 @@ p {
 .input2 {
     border: 2px solid #383838;
     width: 320px;
-    height: 40px;
+    height: 50px;
     margin-top: 20px;
     background-color: #383838;
     color: white;
@@ -573,10 +592,10 @@ p {
 }
 
 
-.input4 {
+.input3 {
     border: 2px solid #383838;
     width: 640px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 150px;
     margin-top: 20px;
     background-color: #383838;
@@ -590,17 +609,21 @@ input:hover{
     border-color: #A5BECF;
 }
 
+
+
 .btn{
-    border: none;
+    /* border: 2px solid grey; */
     background-color: blue;
     font-size: 1.2em;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 780px; 
-    padding: 10px 15px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    font-weight: 900;
+    font-weight: 700;
+    padding: 15px 15px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
 }
 .btn a:hover{
     color: #A5BECF;
@@ -610,19 +633,16 @@ input:hover{
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+@media(max-width:675px){
+    .message1{
+        flex-direction: column;
+        gap: 0em;
+    }
+    .input{
+        width: 250px;
+    }
+    p{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}
