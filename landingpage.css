@@ -300,6 +300,7 @@ h2 span {
 .grid-text {
     display: flex;
     gap: .5em;
+    margin-bottom: 20px;
 }
 
 .board {
@@ -334,6 +335,10 @@ h2 span {
     .grid-items {
         width: 300px;
         height: 350px;
+    }
+
+    .grid-items h3{
+        font-size: 1em;
     }
 
     .grid-items:hover {
