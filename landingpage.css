@@ -299,7 +299,7 @@ h2 span {
 
 .grid-text {
     display: flex;
-    gap: 1.5em;
+    gap: .5em;
 }
 
 .board {
@@ -312,6 +312,14 @@ h2 span {
 .grid-text h3 {
     color: white;
     text-decoration: none;
+    padding-bottom: 100px;
+    /* margin-left: 10px; */
+}
+
+.grid-items h3{
+    color: white;
+    margin-left: 25px;
+    padding-bottom: 5px;
 }
 
 @media(max-width:874px) {
@@ -427,8 +435,14 @@ h2 span {
     margin-left: 80px;
 }
 
+h6{
+    color: white;
+    font-size: medium;
+    font-weight: 300;
+}
+
 .img2 {
-    width: 50px;
+    width: 30px;
     gap: 1em;
     margin-top: 40px;
 }
@@ -447,6 +461,9 @@ h2 span {
 @media(max-width:427px) {
     .skills {
         width: 100%;
+    }
+    .left-side2 h4{
+        padding-bottom: 0.5em;
     }
 }
 
@@ -481,19 +498,41 @@ h2 span {
     padding: 30px;
 }
 
-.edu-grid {
-    /* border: 2px solid brown; */
+.edu-grids {
+    border: 2px solid blue;
     width: 400px;
     height: 250px;
     background-color: #272727;
+    border-radius: 10px;
+    
+}
+.edu-grids:hover{
+    animation-name: bounce;
+    animation-duration: 2s;
+    border-bottom: 15px solid blue;
+}
+.edu-grids h2{
+    color: white;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-size: medium;
+}
+.edu-grids h3{
+    color: white;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.edu-grid{
     display: flex;
     justify-content: space-around;
-    border-radius: 10px;
+    margin-bottom: 0px;
 }
 
 .edutext {
     /* border: 2px solid blue; */
-    padding: 10px 15px;
+    padding: 8px 15px;
     height: 50px;
     color: white;
     margin-top: 10px;
@@ -519,7 +558,7 @@ h2 span {
         gap: 3em;
     }
 
-    .edu-grid {
+    .edu-grids {
         width: 350px;
         height: 200px;
         justify-content: space-between;
@@ -527,10 +566,17 @@ h2 span {
 }
 
 @media(max-width:419px) {
-    .edu-grid {
+    .edu-grids {
         width: 300px;
-        height: 150px;
+        height: 200px;
         justify-content: space-between;
+    }
+    .edu-grids h2{
+        margin-bottom: 5px;
+        padding-left: 20px;
+    }
+    .edutext{
+        font-size: larger;
     }
 }
 
@@ -613,7 +659,9 @@ input:hover{
 
 .btn{
     /* border: 2px solid grey; */
+    border: none;
     background-color: blue;
+    color: white;
     font-size: 1.2em;
     font-weight: 700;
     padding: 15px 15px;
@@ -623,15 +671,12 @@ input:hover{
     justify-content: center;
     align-items: center;
     margin: 20px auto;
-
+    cursor: pointer;
 }
-.btn a:hover{
+.btn:hover{
     color: #A5BECF;
 }
-.btn a{
-    display: flex;
-    color: white;
-}
+
 
 @media(max-width:675px){
     .message1{
@@ -639,7 +684,7 @@ input:hover{
         gap: 0em;
     }
     .input{
-        width: 250px;
+        width: 300px;
     }
     p{
         font-size: 1.5em;
