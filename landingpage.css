@@ -470,6 +470,20 @@ h6{
     .left-side2 h4{
         padding-bottom: 0.5em;
     }
+    .left-side2 button{
+    font-size: 1em;
+    padding: 12px 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+    .left-side2 h1{
+        font-size: 1.5em;
+        text-decoration-thickness: 3px;
+    }
+    .left-side2 h1 span{
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+    }
 }
 
 
