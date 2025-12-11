@@ -90,11 +90,11 @@
 .speaker1{
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 280px;
 }
 .speaker2{
     position: absolute;
-    top: 140px;
+    top: 100px;
     left: 900px; 
 }
 .circle{
@@ -133,4 +133,10 @@
 }
 .innercircle:hover{
     background-color: green;
+}
+
+@media(max-width:2560px){
+    .speaker{
+        display: none;
+    }
 }
